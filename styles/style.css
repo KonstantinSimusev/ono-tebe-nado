@@ -1,4 +1,118 @@
-h1 {
-  background-color: #6d6d6d;
+.header {
+  display: grid;
+  grid-template-columns: 1fr 138px 1fr;
+  align-items: center;
+  margin: 92px 24px;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 31px;
+  margin-left: 26px;
+  font-size: 18px;
+  list-style-type: circle;
+}
+
+.header__links-list-item {
+  letter-spacing: 0.3px;
+}
+
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+}
+
+.header__link_active {
+  border: 0;
+  letter-spacing: 0;
+}
+
+.link-border {
+  border-bottom: 1px solid #000;
+}
+
+.header__logo {
+  display: block;
+}
+
+.header__address {
+  justify-self: end;
+  margin-right: 25px;
+}
+
+.address {
+  width: 240px;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.1px;
+  list-style-type: none;
+}
+
+.cover {
+  position: relative;
+  z-index: 0;
+  background: url(../images/cover.jpg) no-repeat center / cover;
+  padding: 163px 50px 50px;
+}
+
+.overlay {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-color: rgba(0 0 0 / 0.5);
+}
+
+.cover__title {
+  display: grid;
+  gap: 6.5px;
   color: #fff;
+}
+
+.aligned-text {
+  display: block;
+  font-size: 100px;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 80px;
+  margin-top: 127px;
+}
+
+.cover__description-text {
+  color: #fff;
+  font-weight: normal;
+  font-size: 22px;
+  text-transform: uppercase;
+  word-spacing: 18px;
+}
+
+.bet-button {
+  border: 1px solid #fff;
+  padding: 12px 32px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: transparent;
 }
