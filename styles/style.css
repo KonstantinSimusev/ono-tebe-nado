@@ -33,13 +33,16 @@
 }
 
 .contacts {
-  justify-self: end;
-  margin-right: 25px;
-  margin-left: 191px;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.1px;
   list-style-type: none;
+}
+
+.header__contacts-position {
+  justify-self: end;
+  margin-right: 25px;
+  margin-left: 191px;
 }
 
 .header__link,
@@ -258,7 +261,7 @@
 
 .footer__contacts-position {
   justify-self: start;
-  margin: 0 188px 0 0;
+  margin-right: 188px;
   line-height: 1.35;
 }
 
