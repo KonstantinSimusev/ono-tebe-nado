@@ -2,4 +2,4 @@
 
 ### Ссылка на проект
 
-#### https://github.com/yandex-praktikum/ono-tebe-nado.git
+#### https://github.com/KonstantinSimusev/ono-tebe-nado.git
