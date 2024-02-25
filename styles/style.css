@@ -23,7 +23,7 @@
   list-style-type: none;
 }
 
-.header__link_active {
+.link-active {
   letter-spacing: 0;
   text-decoration: none;
 }
@@ -32,29 +32,23 @@
   display: block;
 }
 
-.contacts {
+.address {
+  max-width: 240px;
   font-size: 18px;
+  font-style: normal;
   line-height: 1.33;
   letter-spacing: 0.1px;
   list-style-type: none;
 }
 
-.header__contacts-position {
+.header-position {
   justify-self: end;
   margin-right: 25px;
-  margin-left: 191px;
 }
 
-.header__link,
-.contacts__phone-link,
-.contacts__email-link,
-.footer__menu-link {
+.link-decoration {
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
-}
-
-.contacts__address {
-  font-style: normal;
 }
 
 /* COVER SECTION */
@@ -70,7 +64,7 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  background-color: rgba(0 0 0 / 0.5);
+  background-color: rgba(0 0 0 / 0.6);
 }
 
 .cover__title {
@@ -86,20 +80,20 @@
   text-transform: uppercase;
 }
 
-.letter-spacing-extended {
-  letter-spacing: 60px;
-}
-
-.no-letter-spacing {
-  letter-spacing: 0;
-}
-
 .aligned-text_center {
   text-align: center;
 }
 
 .aligned-text_right {
   text-align: right;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
 }
 
 .cover__description {
@@ -153,6 +147,7 @@
 .lots__card-list-item {
   flex-grow: 1;
   flex-basis: 334px;
+  min-height: 100%;
 }
 
 .card-link {
@@ -168,18 +163,21 @@
   min-height: 100%;
   padding: 51px 40px 49px;
   color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .card_type_film {
-  background: url(../images/card-lot-01.jpg) no-repeat center / cover;
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-  background: url(../images/card-lot-02.jpg) no-repeat center / cover;
+  background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-  background: url(../images/card-lot-03.jpg) no-repeat center / cover;
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 .card__title {
@@ -259,25 +257,27 @@
   margin: 180px 50px 88px;
 }
 
-.footer__contacts-position {
+.footer-position {
   justify-self: start;
-  margin-right: 188px;
   line-height: 1.35;
 }
 
-.footer__menu-list {
+.footer__links-list {
   font-size: 18px;
   text-align: center;
   list-style-type: none;
 }
 
-.footer__menu-link_active {
+.link-active {
   text-decoration: none;
+}
+
+.footer__social {
+  justify-self: end;
 }
 
 .footer__social-list {
   display: flex;
-  justify-self: end;
   gap: 48px;
   list-style-type: none;
 }
