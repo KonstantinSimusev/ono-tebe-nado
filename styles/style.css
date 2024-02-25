@@ -268,10 +268,6 @@
   list-style-type: none;
 }
 
-.link-active {
-  text-decoration: none;
-}
-
 .footer__social {
   justify-self: end;
 }
