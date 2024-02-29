@@ -1,18 +1,25 @@
+
 /* HEADER */
 
 .header {
   display: grid;
   grid-template-columns: 1fr 138px 1fr;
   align-items: center;
-  margin: 92px 24px;
+}
+
+.header-padding {
+  padding: 92px 24px;
 }
 
 .header__links-list {
   display: flex;
   gap: 31px;
-  margin-left: 26px;
   font-size: 18px;
   list-style-type: circle;
+}
+
+.links-padding {
+  padding-left: 26px;
 }
 
 .header__links-list-item {
@@ -47,30 +54,33 @@
 }
 
 .link-decoration {
-  text-decoration-thickness: 1px;
-  text-underline-offset: 4px;
+  border-bottom: 1px solid var(--first-color);
+  text-decoration: none;
+
 }
 
 /* COVER SECTION */
 
 .cover {
   position: relative;
-  z-index: 0;
+  z-index: 1;
   padding: 163px 50px 50px;
   background: url(../images/cover.jpg) no-repeat center / cover;
+  color: var(--second-color);
 }
 
 .overlay {
   position: absolute;
   inset: 0;
-  z-index: -1;
+  z-index: 2;
   background-color: rgba(0 0 0 / 0.6);
 }
 
 .cover__title {
+  position: relative;
+  z-index: 3;
   display: grid;
   gap: 6.5px;
-  color: #fff;
 }
 
 .aligned-text {
@@ -97,6 +107,8 @@
 }
 
 .cover__description {
+  position: relative;
+  z-index: 3;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -105,7 +117,6 @@
 }
 
 .cover__description-text {
-  color: #fff;
   font-weight: 400;
   font-size: 22px;
   text-transform: uppercase;
@@ -113,9 +124,9 @@
 }
 
 .bet-button {
-  border: 1px solid #fff;
+  border: 1px solid var(--second-color);
   padding: 12px 32px;
-  color: #fff;
+  color: var(--second-color);
   font-weight: 500;
   font-size: 22px;
   text-transform: uppercase;
@@ -147,7 +158,7 @@
 .lots__card-list-item {
   flex-grow: 1;
   flex-basis: 334px;
-  min-height: 100%;
+  min-height: 563px;
 }
 
 .card-link {
@@ -156,13 +167,13 @@
 
 .card {
   position: relative;
-  z-index: 0;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100%;
   padding: 51px 40px 49px;
-  color: #fff;
+  color: var(--second-color);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -181,6 +192,8 @@
 }
 
 .card__title {
+  position: relative;
+  z-index: 3;
   font-weight: 700;
   font-size: 22px;
   text-decoration-line: underline;
@@ -190,6 +203,8 @@
 }
 
 .card__text {
+  position: relative;
+  z-index: 3;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.2;
